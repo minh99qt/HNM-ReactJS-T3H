@@ -1,0 +1,15 @@
+td {
+  padding: 10px;
+}
+body {
+  font-size: 18px;
+}
+h1 {
+  color: black;
+  background-color: green;
+  display: inline;
+  padding: 5px;
+}
+table {
+  margin-top: 20px;
+}
