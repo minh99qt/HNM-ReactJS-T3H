@@ -7,7 +7,12 @@ body {
   justify-content: space-between;
   background-color: #ece5e5;
 }
-
+.menu::after {
+  content: "";
+  width: 10px;
+  height: 80px;
+  background-color: gray;
+}
 .menu__logo {
   display: flex;
   align-items: center;
@@ -18,12 +23,7 @@ body {
 .menu__item {
   background-color: #ece5e5;
 }
-.menu::after {
-  content: "";
-  width: 10px;
-  height: 80px;
-  background-color: gray;
-}
+
 .menu__item-nav {
   display: flex;
   margin-left: 250px;
