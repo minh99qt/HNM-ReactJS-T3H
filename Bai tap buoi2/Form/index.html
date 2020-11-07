@@ -10,6 +10,7 @@
     <h1>
         ĐĂNG KÝ THÀNH VIÊN
     </h1>
+<form method="GET" action="">
     <table border="1">
         <tr>
             <th>
@@ -32,7 +33,7 @@
                 Email:
             </td>
             <td>
-                <input type="email" id="mail" name="email">
+                <input type="email" id="mail" name="email" placeholder="Nhập email">
             </td>
         </tr>
         <tr>
@@ -40,7 +41,7 @@
                 Mật Khẩu :
             </td>
             <td>
-                <input type="password" id="pass" name="password">
+                <input type="password" id="pass" name="password" minlength="6">
             </td>
         </tr>
         <tr>
@@ -48,7 +49,7 @@
                 Avatar:
             </td>
             <td>
-                <input type="file" id="myfile" name="myfile">
+                <input type="file" id="myfile" name="myfile" multiple accept="image/*,.pdf">
             </td>
         </tr>
         <tr>
@@ -56,25 +57,25 @@
                 Số Điện thoại :
             </td>
             <td>
-                <input type="text" id="phone" name="phone">
+                <input type="number id="phone" name="phone">
             </td>
         </tr>
         <tr>
             <td>
-                Tuổi :
+                Tuổi:
             </td>
             <td>
-                <select name="age" id="age">
+                <select name="age" id="age" multiple>
                     <option value="">1 tuổi</option>
-                    <option value="">2 tuổi</option>
-                    <option value="">3 tuổi</option>
+                    <option value="" selected>2 tuổi</option>
+                    <option value="" selected>3 tuổi</option>
                     <option value="">4 tuổi</option>
                 </select>
             </td>
         </tr>
         <tr>
             <td>
-                Giới Tính
+                Giới Tính:
             </td>
             <td>
                 <input type="radio" id="male" name="gender" value="male">
@@ -88,11 +89,11 @@
                 Sở Thích :
             </td>
             <td>
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="ball">
                 <label for="vehicle1"> Đá Bóng</label><br>
-                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Bed">
                 <label for="vehicle2"> Cầu Lông</label><br>
-                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Sw">
                 <label for="vehicle3"> Đua Thuyền</label>
             </td>
         </tr>
@@ -105,5 +106,8 @@
             </td>
         </tr>
     </table>
+    <input type="submit">
+</form>
+
 </body>
 </html>
