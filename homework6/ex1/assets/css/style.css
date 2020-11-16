@@ -1,0 +1,111 @@
+.wraper {
+  width: 500px;
+  height: 600px;
+  background-color: #41d0ff1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5;
+}
+
+.card {
+  width: 400px;
+  height: 500px;
+  -webkit-box-shadow: -4px 9px 19px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -4px 9px 19px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: -4px 9px 19px 4px rgba(0, 0, 0, 0.75);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.card__img {
+  width: 100%;
+  height: 75%;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+}
+
+.card__img img {
+  width: 40%;
+}
+
+.card__img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5;
+  background-color: rgba(80, 99, 103, 0.6);
+  opacity: 0.3;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.wraper:hover .card__img-overlay {
+  opacity: 1;
+}
+
+.wraper:hover .card__img-overlay .content {
+  opacity: 1;
+}
+
+.content {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-size: 40px;
+  color: white;
+  letter-spacing: 4px;
+}
+
+.card__title {
+  background-color: lightyellow;
+  position: relative;
+  z-index: 10;
+  border-radius: 10px 10px;
+  height: 130px;
+}
+
+.card__title h2 {
+  text-align: center;
+  margin: 0;
+  padding: 44px;
+  font-size: 35px;
+  font-family: "Roboto", sans-serif;
+  z-index: 10;
+}
+
+.card__title-icon {
+  width: 60px;
+  height: 60px;
+  background-color: lightyellow;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0.1em 0.1em 0.1em 0.1em rgba(15, 28, 63, 0.125);
+  position: absolute;
+  top: -70px;
+  transform: translate(50%, 50%);
+}
+
+.card__title-icon i {
+  font-size: 30px;
+}
+
+.card__title::before {
+  content: "";
+  border: 20px solid;
+  border-color: lightblue lightyellow lightyellow lightyellow;
+  position: absolute;
+  right: 50%;
+  transform: translate(50%);
+}
